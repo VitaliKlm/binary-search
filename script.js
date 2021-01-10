@@ -15,3 +15,17 @@ function binarySearch(list, item){
     }
     return("item not found")
 }
+
+const sqrNumList = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+const itemForSearch = 81
+const itemPosition = binarySearch(sqrNumList, itemForSearch)
+const output = `binarySearch function:
+
+parameters:
+ordered list - ${sqrNumList}
+item for search - ${itemForSearch}
+position of the first item in the list = 0 
+
+function result:
+item position in the ordered list - ${itemPosition}`
+console.log(output)
